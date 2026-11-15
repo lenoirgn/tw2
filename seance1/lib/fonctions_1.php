@@ -83,4 +83,48 @@ function tablesMultiplications():{
     return "<ul>".$res."</ul>"
 }
 
+function ligneEntete():string{
+    $res="<tr><th>*</th>";
+    for ($i=1;$i<10;$i++){
+        $res.="<th>".$i."</th>";
+    }
+    return $res."</tr>";
+}
+function ligneTable(int $i):string{
+    $res="<tr><th>".$i."</th>";
+    for ($j=1;$j<10;$j++){
+        $res.="<td>".$i*$j"</td>";
+    }
+    return $res."</tr>";
+}
+
+function tableauMult():string {
+    $res="<table id="multiplications">";
+    $res.=ligneEntete();
+    for ($j=1;$j<10;$j++){
+        $res.=ligneTable($j);
+    }
+    return $res."</table>";
+} 
+
+
+function parag(string $texte ):string {
+    $res=""
+    $tabTexte=explode("+",$texte);
+    foreach($tabTexte as $t){
+        $res.="<p>".trim(t)."</p>";
+
+    }
+    return $res;
+}
+
+function enSpan($s) :string {
+    $res=""
+    $tabTexte=explode("-",$s);
+    foreach($tabTexte as $t){
+        $res.="<span>".trim(t)."</span>";
+
+    }
+    return $res;
+
 ?>
