@@ -23,7 +23,34 @@
 
         <section>
             <h2>Résultat de la fonction des paragraphes</h2>
-            <?= n_parag(10, "je suis etudiant.") ?>
+            <?= n_parag("je suis etudiant.",10) ?>
+        </section>
+
+        <section>
+            <h2>1. Table de multiplication de 5</h2>
+<?php
+echo tableMultiplication(5);
+?>
+
+<h2>2. Toutes les tables de multiplication</h2>
+<?php
+echo tablesMultiplications();
+?>
+
+<h2>3. Tableau des multiplications</h2>
+<?php
+echo tableauMult();
+?>
+
+<h2>4. Fonction parag</h2>
+<?php
+echo parag("Bonjour + Comment allez-vous + Au revoir");
+?>
+
+<h2>5. Fonction enSpan</h2>
+<?php
+echo enSpan("Bonjour-Mamadou-Test");
+?>
         </section>
 
     </body>

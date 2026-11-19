@@ -42,3 +42,35 @@ table#multiplications th {
     text-align : center;
     padding : 1mm;
 }
+
+/* Question 2 css*/
+.blanc {
+    border-collapse: collapse;
+}
+
+.plateau td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Case blanche */
+.blanc {
+    background-color: white;
+}
+
+/* Case noire */
+.noir {
+    background-color: black;
+}
+
+/* Case vide */
+.plateau td:not(.blanc):not(.noir) {
+    background-color: gray;
+}
+
+/* Cacher les lettres */
+.plateau td span {
+    display: none;
+}
